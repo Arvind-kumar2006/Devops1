@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    tools{
+        Nodejs 'Nodejs'
+    }
 
     stages {
         stage('Checkout'){
-            git : ''
+            git branch 'main', url :'https://github.com/Arvind-kumar2006/Devops1'
         }
 
         stage('Build') {
