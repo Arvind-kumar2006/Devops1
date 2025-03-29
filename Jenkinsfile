@@ -24,6 +24,11 @@ pipeline {
                 echo 'No test defined'
             }
         }
+        stage('Deploy'){
+            steps{
+                echo 'sucessfull deploy'
+            }
+            
        
     }
 }
