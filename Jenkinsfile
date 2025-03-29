@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Deploy'){
             setps{
-                sh 'npm run dev'
+               
                 echo 'npm file runing'
             }
         }
