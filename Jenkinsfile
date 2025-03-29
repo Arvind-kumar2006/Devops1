@@ -1,25 +1,25 @@
-pipeline{
+pipeline {
     agent any
 
-    stages{
+    stages {
         stage('Checkout'){
+            git : ''
+        }
+
+        stage('Build') {
+            steps {
+                sh 'npm run build'
+                echo 'npm is create'
+            }
+        }stage('Test'){
             steps{
-             git : 'https://github.com/Arvind-kumar2006/Evaluation',branch :'main'
+                sh 'npm test'
+                echo 'No test defined'
             }
-            stage('Build'){
-                steps{
-                    sh 'npm run build'
-                }
-            }stage('Test'){
-                steps{
-                    sh 'npm test'
-                    echo 'No tests defined'
-                }
-            }
-            stage('Deploy'){
-                steps{
+        }stage('Deploy'){
+            setps{
                 sh 'npm run dev'
-                }
+                echo 'npm file runing'
             }
         }
     }
