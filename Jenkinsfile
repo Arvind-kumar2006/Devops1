@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Deploy'){
             setps{
-               
+               echo 'No test defined'
                 echo 'npm file runing'
             }
         }
