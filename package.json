@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo 'test is succesful ' && exit 0",
-    "build":"npm run build",
-    "Deploy":"succesfull deploy"
+    "build": "npm run build",
+    "Deploy": "succesfull deploy"
   },
   "dependencies": {
     "express": "^4.18.2"
