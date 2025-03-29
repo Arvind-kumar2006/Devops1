@@ -6,7 +6,10 @@ pipeline {
 
     stages {
         stage('Checkout'){
-            git branch 'main', url :'https://github.com/Arvind-kumar2006/Devops1'
+            steps{
+                   git branch 'main', url :'https://github.com/Arvind-kumar2006/Devops1'
+            }
+         
         }
 
         stage('Build') {
